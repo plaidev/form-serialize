@@ -51,7 +51,7 @@ function serialize(form, options) {
             continue;
         }
 
-        if (element.type.toLowerCase() === 'password') {
+        if (options.ignore_password && element.type.toLowerCase() === 'password') {
             continue;
         }
 
