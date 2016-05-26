@@ -51,6 +51,10 @@ function serialize(form, options) {
             continue;
         }
 
+        if (element.type.toLowerCase() === 'password') {
+            continue;
+        }
+
         var key = element.name;
         var val = element.value;
 
