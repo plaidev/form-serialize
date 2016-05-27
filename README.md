@@ -50,6 +50,7 @@ hash | boolean | false | if `true`, the hash serializer will be used for `serial
 serializer | function | url-encoding | override the default serializer (hash or url-encoding)
 disabled | boolean | false | if `true`, disabled fields will also be serialized
 empty | boolean | false | if `true`, empty fields will also be serialized
+ignore_password | boolean | false | if `true`, "password" type fields will __NOT__ also be serialized([@sdaikichi](https://github.com/sdaikichi) add)
 
 ### custom serializer
 
